@@ -18,65 +18,18 @@ function IntroScreen({
     <main className="intro-page flex min-h-svh items-center justify-center px-4 py-8 relative overflow-hidden">
       <div className="intro-page__glow"></div>
 
-      {/* Background floating icons - behind everything */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 floating-doodle opacity-10 select-none">
-          <Heart className="text-pink-400 w-12 h-12" />
-        </div>
-        <div className="absolute top-1/3 left-1/4 floating-doodle opacity-8 select-none" style={{ animationDelay: '-2s' }}>
-          <Star className="text-yellow-300 w-10 h-10" />
-        </div>
-        <div className="absolute top-2/3 left-12 floating-doodle opacity-10 select-none" style={{ animationDelay: '-4s' }}>
-          <Gift className="text-blue-300 w-11 h-11" />
-        </div>
-        <div className="absolute top-1/4 right-16 floating-doodle opacity-8 select-none" style={{ animationDelay: '-1s' }}>
-          <Smile className="text-purple-300 w-10 h-10" />
-        </div>
-        <div className="absolute bottom-1/3 right-12 floating-doodle opacity-10 select-none" style={{ animationDelay: '-3s' }}>
-          <Music className="text-indigo-300 w-12 h-12" />
-        </div>
-        <div className="absolute bottom-20 left-1/3 floating-doodle opacity-8 select-none" style={{ animationDelay: '-2.5s' }}>
-          <Sparkles className="text-cyan-300 w-9 h-9" />
-        </div>
-        <div className="absolute top-1/2 right-1/4 floating-doodle opacity-10 select-none" style={{ animationDelay: '-5s' }}>
-          <Heart className="text-rose-300 w-10 h-10" />
-        </div>
-        <div className="absolute bottom-1/4 right-1/3 floating-doodle opacity-8 select-none" style={{ animationDelay: '-1.5s' }}>
-          <Star className="text-amber-300 w-11 h-11" />
-        </div>
-      </div>
-
-      <div className="intro-page__glow"></div>
-
-      {/* Floating decorative icons */}
-      <div className="absolute top-12 left-8 floating-doodle opacity-25 select-none pointer-events-none">
-        <Sparkles className="text-primary w-8 h-8" />
-      </div>
-      <div className="absolute top-32 right-12 floating-doodle opacity-20 select-none pointer-events-none" style={{ animationDelay: '-3s' }}>
-        <GraduationCap className="text-secondary w-10 h-10" />
-      </div>
-      <div className="absolute bottom-20 left-12 floating-doodle opacity-25 select-none pointer-events-none" style={{ animationDelay: '-5s' }}>
-        <Sparkles className="text-primary w-7 h-7" />
-      </div>
-      <div className="absolute bottom-32 right-8 floating-doodle opacity-20 select-none pointer-events-none" style={{ animationDelay: '-2s' }}>
-        <Users className="text-secondary w-9 h-9" />
-      </div>
-      <div className="absolute top-1/2 left-4 floating-doodle opacity-15 select-none pointer-events-none" style={{ animationDelay: '-4s' }}>
-        <Bookmark className="text-primary w-6 h-6" />
-      </div>
-      <div className="absolute top-1/3 right-6 floating-doodle opacity-20 select-none pointer-events-none" style={{ animationDelay: '-1s' }}>
-        <CalendarIcon className="text-secondary w-8 h-8" />
-      </div>
+      {/* Use shared FloatingIcons component for consistency */}
+      <FloatingIcons />
 
       <section className="relative z-10 flex w-full max-w-lg flex-col items-center text-center">
         <p className="mb-3 font-sans text-xs font-bold uppercase tracking-[0.45em] text-[#105982]/70">
-          From Nam to Mina-san
+          From Nam to All friends
         </p>
 
         <h1 className="font-handwritten text-4xl md:text-5xl font-bold leading-tight text-[#105982] drop-shadow-sm">
-          Một bì thư nhỏ
+          Nhấn dô đuy :3
           <br />
-          dành cho bạn
+  
         </h1>
 
 
@@ -100,9 +53,8 @@ function IntroScreen({
           <span className="intro-envelope__shadow" aria-hidden="true"></span>
           <span className="intro-envelope__back" aria-hidden="true"></span>
           <span className="intro-envelope__letter" aria-hidden={opening}>
-            <span className="intro-envelope__letter-ribbon">From Nam to Mina-san</span>
+            <span className="intro-envelope__letter-ribbon">From Nam to All Friends</span>
             <span className="intro-envelope__letter-title">Lời mời tốt nghiệp</span>
-            <span className="intro-envelope__letter-body">Nhấn để mở thư và bước vào buổi Grad celebration.</span>
           </span>
           <span className="intro-envelope__body-flap" aria-hidden="true"></span>
           <span className="intro-envelope__flap" aria-hidden="true"></span>
@@ -111,9 +63,7 @@ function IntroScreen({
           </span>
         </button>
 
-        <p className="mt-5 text-xs uppercase tracking-[0.35em] text-[#105982]/45">
-          Tap the letter to open
-        </p>
+        
       </section>
     </main>
   );

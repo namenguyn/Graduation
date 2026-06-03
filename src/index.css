@@ -373,22 +373,6 @@
   opacity: 0.8;
 }
 
-/* letter peeks up slightly on hover */
-.intro-envelope:not(:disabled):hover .intro-envelope__letter {
-  transform: translateY(38%) scale(0.98);
-  opacity: 1;
-}
-
-/* flap lifts a little on hover */
-.intro-envelope:not(:disabled):hover .intro-envelope__flap {
-  transform: rotateX(-18deg);
-}
-
-/* seal wobbles on hover */
-.intro-envelope:not(:disabled):hover .intro-envelope__seal {
-  transform: translate(-50%, -55%) scale(1.08) rotate(-6deg);
-}
-
 /* focus ring */
 .intro-envelope:focus-visible {
   outline: none;

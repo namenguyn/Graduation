@@ -18,6 +18,26 @@ function IntroScreen({
     <main className="intro-page flex min-h-svh items-center justify-center px-4 py-8">
       <div className="intro-page__glow"></div>
 
+      {/* Floating decorative icons */}
+      <div className="absolute top-12 left-8 floating-doodle opacity-25 select-none pointer-events-none">
+        <Sparkles className="text-primary w-8 h-8" />
+      </div>
+      <div className="absolute top-32 right-12 floating-doodle opacity-20 select-none pointer-events-none" style={{ animationDelay: '-3s' }}>
+        <GraduationCap className="text-secondary w-10 h-10" />
+      </div>
+      <div className="absolute bottom-20 left-12 floating-doodle opacity-25 select-none pointer-events-none" style={{ animationDelay: '-5s' }}>
+        <Sparkles className="text-primary w-7 h-7" />
+      </div>
+      <div className="absolute bottom-32 right-8 floating-doodle opacity-20 select-none pointer-events-none" style={{ animationDelay: '-2s' }}>
+        <Users className="text-secondary w-9 h-9" />
+      </div>
+      <div className="absolute top-1/2 left-4 floating-doodle opacity-15 select-none pointer-events-none" style={{ animationDelay: '-4s' }}>
+        <Bookmark className="text-primary w-6 h-6" />
+      </div>
+      <div className="absolute top-1/3 right-6 floating-doodle opacity-20 select-none pointer-events-none" style={{ animationDelay: '-1s' }}>
+        <CalendarIcon className="text-secondary w-8 h-8" />
+      </div>
+
       <section className="relative z-10 flex w-full max-w-lg flex-col items-center text-center">
         <p className="mb-3 font-sans text-xs font-bold uppercase tracking-[0.45em] text-[#105982]/70">
           From Nam to Mina-san
@@ -29,9 +49,6 @@ function IntroScreen({
           dành cho bạn
         </h1>
 
-        <p className="mt-4 max-w-md font-sans text-sm md:text-base leading-7 text-on-surface-variant/80">
-          Chạm vào bì thư để mở ra lời mời lễ tốt nghiệp và phần Grad celebration phía sau.
-        </p>
 
         <button
           type="button"

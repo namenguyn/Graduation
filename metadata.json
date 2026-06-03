@@ -1,0 +1,6 @@
+{
+  "name": "Grad Celebration",
+  "description": "Lời mời tham gia lễ tốt nghiệp và lưu bút chúc mừng Nguyễn Hoàng Nam",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

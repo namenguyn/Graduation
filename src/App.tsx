@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect, type ChangeEvent } from 'react';
-import { GraduationCap, MapPin, Phone, Calendar as CalendarIcon, ChevronRight, Sparkles, User, CreditCard as Edit, Check, Circle as HelpCircle, Map, Hop as Home, Users, MessageSquare, Volume2, Bookmark } from 'lucide-react';
+import { GraduationCap, MapPin, Phone, Calendar as CalendarIcon, ChevronRight, Sparkles, User, CreditCard as Edit, Check, Circle as HelpCircle, Map, Hop as Home, Users, MessageSquare, Volume2, Bookmark, Heart, Star, Gift, Smile, Music } from 'lucide-react';
 import FloatingIcons from './components/FloatingIcons';
 import Countdown from './components/Countdown';
 import RSVPForm from './components/RSVPForm';
@@ -15,7 +15,37 @@ function IntroScreen({
   opening: boolean;
 }) {
   return (
-    <main className="intro-page flex min-h-svh items-center justify-center px-4 py-8">
+    <main className="intro-page flex min-h-svh items-center justify-center px-4 py-8 relative overflow-hidden">
+      <div className="intro-page__glow"></div>
+
+      {/* Background floating icons - behind everything */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 floating-doodle opacity-10 select-none">
+          <Heart className="text-pink-400 w-12 h-12" />
+        </div>
+        <div className="absolute top-1/3 left-1/4 floating-doodle opacity-8 select-none" style={{ animationDelay: '-2s' }}>
+          <Star className="text-yellow-300 w-10 h-10" />
+        </div>
+        <div className="absolute top-2/3 left-12 floating-doodle opacity-10 select-none" style={{ animationDelay: '-4s' }}>
+          <Gift className="text-blue-300 w-11 h-11" />
+        </div>
+        <div className="absolute top-1/4 right-16 floating-doodle opacity-8 select-none" style={{ animationDelay: '-1s' }}>
+          <Smile className="text-purple-300 w-10 h-10" />
+        </div>
+        <div className="absolute bottom-1/3 right-12 floating-doodle opacity-10 select-none" style={{ animationDelay: '-3s' }}>
+          <Music className="text-indigo-300 w-12 h-12" />
+        </div>
+        <div className="absolute bottom-20 left-1/3 floating-doodle opacity-8 select-none" style={{ animationDelay: '-2.5s' }}>
+          <Sparkles className="text-cyan-300 w-9 h-9" />
+        </div>
+        <div className="absolute top-1/2 right-1/4 floating-doodle opacity-10 select-none" style={{ animationDelay: '-5s' }}>
+          <Heart className="text-rose-300 w-10 h-10" />
+        </div>
+        <div className="absolute bottom-1/4 right-1/3 floating-doodle opacity-8 select-none" style={{ animationDelay: '-1.5s' }}>
+          <Star className="text-amber-300 w-11 h-11" />
+        </div>
+      </div>
+
       <div className="intro-page__glow"></div>
 
       {/* Floating decorative icons */}

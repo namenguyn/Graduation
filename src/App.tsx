@@ -59,7 +59,9 @@ function IntroScreen({
           </span>
           <span className="intro-envelope__body-flap" aria-hidden="true"></span>
           <span className="intro-envelope__flap" aria-hidden="true"></span>
-          <span className="intro-envelope__seal" aria-hidden="true">N</span>
+          <span className="intro-envelope__seal" aria-hidden="true">
+            <img src="/hcmut.png" alt="HCMUT Logo" />
+          </span>
         </button>
 
         <p className="mt-5 text-xs uppercase tracking-[0.35em] text-[#105982]/45">

@@ -165,14 +165,14 @@
   position: absolute;
   inset: 0;
   border-radius: 1rem;
-  /* warm ivory paper */
+  /* blue gradient like BK logo */
   background:
-    linear-gradient(160deg, #fffef9 0%, #fdf3e3 50%, #fde8c8 100%);
-  border: 1.5px solid rgba(16, 89, 130, 0.18);
+    linear-gradient(160deg, #0052cc 0%, #0076d6 50%, #0099ff 100%);
+  border: 1.5px solid rgba(0, 82, 204, 0.3);
   box-shadow:
-    0 2px 0 rgba(255,255,255,0.9) inset,
-    0 28px 56px rgba(15, 23, 42, 0.18),
-    0 4px 12px rgba(15, 23, 42, 0.08);
+    0 2px 0 rgba(255,255,255,0.2) inset,
+    0 28px 56px rgba(0, 52, 102, 0.25),
+    0 4px 12px rgba(0, 52, 102, 0.15);
   z-index: 0;
   overflow: hidden;
 }
@@ -198,9 +198,9 @@
   position: absolute;
   inset: 0;
   border-radius: 1rem;
-  /* same warm paper gradient as back */
-  background: linear-gradient(180deg, #fdf0da 0%, #f9e2b8 100%);
-  border: 1.5px solid rgba(16, 89, 130, 0.18);
+  /* blue gradient like back */
+  background: linear-gradient(180deg, #0066e6 0%, #0052cc 100%);
+  border: 1.5px solid rgba(0, 82, 204, 0.3);
   /* clip to show only the bottom V-shaped pocket  */
   clip-path: polygon(0% 45%, 50% 75%, 100% 45%, 100% 100%, 0% 100%);
   z-index: 1;
@@ -303,9 +303,9 @@
   position: absolute;
   inset: 0;
   border-radius: 1rem 1rem 0 0;
-  /* warm paper matching back, slightly lighter at top */
-  background: linear-gradient(180deg, #fffdf7 0%, #fde9c4 100%);
-  border: 1.5px solid rgba(16, 89, 130, 0.18);
+  /* blue gradient like BK logo */
+  background: linear-gradient(180deg, #0066e6 0%, #0052cc 100%);
+  border: 1.5px solid rgba(0, 82, 204, 0.3);
   /* clip to triangle pointing down */
   clip-path: polygon(0% 0%, 100% 0%, 100% 2%, 50% 52%, 0% 2%);
   transform-origin: top center;
@@ -337,30 +337,23 @@
   place-items: center;
   transform: translate(-50%, -50%);
   border-radius: 9999px;
-  background: radial-gradient(circle at 35% 35%, #e8617e 0%, #c0415d 60%, #9a2d47 100%);
-  color: white;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
+  background: white;
   box-shadow:
-    0 0 0 3px rgba(255,255,255,0.7),
-    0 0 0 4.5px rgba(192,65,93,0.35),
-    0 6px 20px rgba(160, 40, 65, 0.45);
+    0 0 0 3px rgba(255,255,255,0.9),
+    0 0 0 4.5px rgba(0, 82, 204, 0.3),
+    0 6px 20px rgba(0, 52, 102, 0.25);
   z-index: 4;
   transition:
     transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
     opacity 0.4s ease;
+  overflow: hidden;
 }
 
-/* decorative ring inside the seal */
-.intro-envelope__seal::before {
-  content: '';
-  position: absolute;
-  inset: 4px;
-  border-radius: 9999px;
-  border: 1.5px dashed rgba(255,255,255,0.45);
-  pointer-events: none;
+.intro-envelope__seal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
 }
 
 /* ===== HOVER STATE ===== */

@@ -1,23 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect, type ChangeEvent } from 'react';
-import { 
-  GraduationCap, 
-  MapPin, 
-  Phone, 
-  Calendar as CalendarIcon, 
-  ChevronRight, 
-  Sparkles, 
-  User, 
-  Edit, 
-  Check, 
-  HelpCircle, 
-  Map, 
-  Home, 
-  Users, 
-  MessageSquare,
-  Volume2,
-  Bookmark
-} from 'lucide-react';
+import { GraduationCap, MapPin, Phone, Calendar as CalendarIcon, ChevronRight, Sparkles, User, CreditCard as Edit, Check, Circle as HelpCircle, Map, Hop as Home, Users, MessageSquare, Volume2, Bookmark } from 'lucide-react';
 import FloatingIcons from './components/FloatingIcons';
 import Countdown from './components/Countdown';
 import RSVPForm from './components/RSVPForm';
@@ -74,8 +57,7 @@ function IntroScreen({
             <span className="intro-envelope__letter-title">Lời mời tốt nghiệp</span>
             <span className="intro-envelope__letter-body">Nhấn để mở thư và bước vào buổi Grad celebration.</span>
           </span>
-          <span className="intro-envelope__front-left" aria-hidden="true"></span>
-          <span className="intro-envelope__front-right" aria-hidden="true"></span>
+          <span className="intro-envelope__body-flap" aria-hidden="true"></span>
           <span className="intro-envelope__flap" aria-hidden="true"></span>
           <span className="intro-envelope__seal" aria-hidden="true">N</span>
         </button>

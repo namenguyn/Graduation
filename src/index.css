@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* Fonts: headings use Caveat (handwritten), body uses Noto Sans. Google Fonts are linked in index.html with Vietnamese subset. */
+/* Fonts: headings use Fredoka (soft rounded), body uses Noto Sans. Google Fonts are linked in index.html with Vietnamese subset. */
 :root{
-  --font-heading: 'Caveat', 'Be Vietnam Pro', serif;
+  --font-heading: 'Fredoka', 'Be Vietnam Pro', serif;
   --font-body: 'Noto Sans', 'Plus Jakarta Sans', 'Karla', sans-serif;
 }
 
@@ -14,14 +14,16 @@
 
 /* Custom font shortcuts */
 .font-handwritten {
-  font-family: 'Caveat', var(--font-heading) !important;
+  font-family: 'Fredoka', var(--font-heading) !important;
   font-weight: 700;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
+  font-style: italic;
 }
 
 .font-display {
-  font-family: 'Caveat', 'Be Vietnam Pro', var(--font-body) !important;
+  font-family: 'Fredoka', 'Be Vietnam Pro', var(--font-body) !important;
   font-weight: 700;
+  font-style: italic;
 }
 
 /* Whimsical Sketchy Borders - Vintage Pencil Style */

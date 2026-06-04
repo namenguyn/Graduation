@@ -255,17 +255,17 @@ export default function App() {
           <div className="absolute -top-6 -left-2 font-serif text-6xl text-primary/15 select-none font-bold">“</div>
           
           {isEditing ? (
-            <div className="bg-white p-3 border border-dashed border-outline-variant rounded">
+            <div className="vintage-card p-3 border-none">
               <label className="block text-xs font-bold text-on-surface-variant mb-1 text-left">
                 Lời ngỏ gửi bạn bè (Tiếng Việt):
               </label>
-              <textarea 
-                value={introQuote} 
+              <textarea
+                value={introQuote}
                 onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setIntroQuote(e.target.value)}
-                className="w-full h-24 p-2 text-sm border rounded font-sans focus:outline-none"
+                className="w-full h-24 p-2 text-sm border-2 border-dashed border-[#8b7355] rounded font-sans focus:outline-none"
                 maxLength={300}
               />
-              <button 
+              <button
                 onClick={handleSaveEdit}
                 className="mt-2 px-3 py-1 bg-primary text-white text-xs font-bold rounded flex items-center gap-1 ml-auto"
               >
@@ -284,12 +284,12 @@ export default function App() {
 
         {/* LOGISTICS CARD DETAILS: TIME & LOCATION */}
         <div id="schedule" className="grid md:grid-cols-3 gap-8 mb-14">
-          
+
           {/* TIME CONTAINER */}
-          <div className="sketch-border-sm bg-white p-6 hover:-rotate-1 transition-all duration-300 relative shadow-sm">
-          
-            
-            <div className="flex items-center gap-3 mb-4 border-b border-dashed border-slate-100 pb-3">
+          <div className="vintage-card p-6 hover:-rotate-1 transition-all duration-300 relative">
+
+
+            <div className="flex items-center gap-3 mb-4 border-b border-dashed border-[#8b7355]/20 pb-3">
               <CalendarIcon className="text-primary stroke-[1.8]" size={28} />
               <h3 className="font-handwritten text-2xl font-bold text-primary">Thời gian tổ chức</h3>
             </div>
@@ -314,10 +314,10 @@ export default function App() {
           </div>
 
           {/* LOCATION CONTAINER */}
-          <div className="sketch-border-sm bg-white p-6 hover:rotate-1 transition-all duration-300 relative shadow-sm">
-            
-            
-            <div className="flex items-center gap-3 mb-4 border-b border-dashed border-slate-100 pb-3">
+          <div className="vintage-card p-6 hover:rotate-1 transition-all duration-300 relative">
+
+
+            <div className="flex items-center gap-3 mb-4 border-b border-dashed border-[#8b7355]/20 pb-3">
               <MapPin className="text-secondary stroke-[1.8]" size={28} />
               <h3 className="font-handwritten text-2xl font-bold text-secondary">Địa điểm</h3>
             </div>
@@ -343,8 +343,8 @@ export default function App() {
           </div>
 
           {/* CONTACT CARD (separate) */}
-          <div className="sketch-border-sm bg-white p-6 hover:rotate-1 transition-all duration-300 relative shadow-sm">
-            <div className="flex items-center gap-3 mb-4 border-b border-dashed border-slate-100 pb-3">
+          <div className="vintage-card p-6 hover:rotate-1 transition-all duration-300 relative">
+            <div className="flex items-center gap-3 mb-4 border-b border-dashed border-[#8b7355]/20 pb-3">
               <Phone className="text-primary stroke-[1.2]" size={28} />
               <h3 className="font-handwritten text-2xl font-bold text-primary">Liên hệ</h3>
             </div>

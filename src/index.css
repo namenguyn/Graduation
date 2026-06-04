@@ -21,22 +21,75 @@
   font-family: 'Bricolage Grotesque', 'Be Vietnam Pro', var(--font-body) !important;
 }
 
-/* Whimsical Sketchy Borders */
+/* Whimsical Sketchy Borders - Vintage Pencil Style */
 .sketch-border {
   position: relative;
-  border: 5px solid #0b6fa8; /* solid blue frame */
+  border: 3px dashed #8b7355; /* warm brown pencil color */
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   box-shadow: 0 8px 18px rgba(16,20,32,0.08), inset 0 1px 0 rgba(255,255,255,0.6);
+  background: linear-gradient(135deg, rgba(139, 115, 85, 0.03) 0%, transparent 100%);
+}
+
+.sketch-border::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 2px solid transparent;
+  border-radius: 250px 12px 220px 12px/12px 220px 12px 250px;
+  background-image:
+    linear-gradient(135deg, rgba(180, 150, 120, 0.15) 0%, transparent 50%),
+    linear-gradient(-45deg, rgba(200, 170, 140, 0.08) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .sketch-border-sm {
-  border: 2.5px solid #0b6fa8; /* small frames use the same blue accent */
+  position: relative;
+  border: 2.5px dashed #8b7355; /* warm brown pencil */
   border-radius: 120px 10px 110px 10px/10px 110px 10px 120px;
+  background: linear-gradient(135deg, rgba(139, 115, 85, 0.02) 0%, transparent 100%);
+}
+
+.sketch-border-sm::after {
+  content: '';
+  position: absolute;
+  inset: 2.5px;
+  border: 1.5px solid transparent;
+  border-radius: 115px 8px 105px 8px/8px 105px 8px 115px;
+  background-image:
+    linear-gradient(135deg, rgba(180, 150, 120, 0.1) 0%, transparent 50%),
+    linear-gradient(-45deg, rgba(200, 170, 140, 0.06) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 /* Wax crayon hatching background */
 .crayon-fill {
-  background-image: repeating-linear-gradient(45deg, rgba(65, 190, 253, 0.08), rgba(65, 190, 253, 0.08) 2px, transparent 2px, transparent 6px);
+  background-image: repeating-linear-gradient(45deg, rgba(139, 115, 85, 0.08), rgba(139, 115, 85, 0.08) 2px, transparent 2px, transparent 6px);
+}
+
+/* Vintage sketchy card style */
+.vintage-card {
+  position: relative;
+  border: 2.5px dashed #8b7355;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 250, 245, 0.8) 0%, rgba(245, 240, 235, 0.6) 100%);
+  box-shadow:
+    0 4px 12px rgba(139, 115, 85, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.vintage-card::before {
+  content: '';
+  position: absolute;
+  inset: 2.5px;
+  border-radius: 18px;
+  background-image:
+    linear-gradient(45deg, rgba(210, 180, 150, 0.04) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(210, 180, 150, 0.04) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(210, 180, 150, 0.04) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(210, 180, 150, 0.04) 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+  pointer-events: none;
 }
 
 /* Playful floating swaying animation */

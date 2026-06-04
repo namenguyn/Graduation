@@ -255,7 +255,7 @@ export default function App() {
           <div className="absolute -top-6 -left-2 font-serif text-6xl text-primary/15 select-none font-bold">“</div>
           
           {isEditing ? (
-            <div className="vintage-card p-3 border-none">
+            <div className="vintage-card-sky p-3 border-none">
               <label className="block text-xs font-bold text-on-surface-variant mb-1 text-left">
                 Lời ngỏ gửi bạn bè (Tiếng Việt):
               </label>
@@ -286,7 +286,7 @@ export default function App() {
         <div id="schedule" className="grid md:grid-cols-3 gap-8 mb-14">
 
           {/* TIME CONTAINER */}
-          <div className="vintage-card p-6 hover:-rotate-1 transition-all duration-300 relative">
+          <div className="vintage-card-warm p-6 hover:-rotate-1 transition-all duration-300 relative">
 
 
             <div className="flex items-center gap-3 mb-4 border-b border-dashed border-[#8b7355]/20 pb-3">
@@ -314,7 +314,7 @@ export default function App() {
           </div>
 
           {/* LOCATION CONTAINER */}
-          <div className="vintage-card p-6 hover:rotate-1 transition-all duration-300 relative">
+          <div className="vintage-card-sage p-6 hover:rotate-1 transition-all duration-300 relative">
 
 
             <div className="flex items-center gap-3 mb-4 border-b border-dashed border-[#8b7355]/20 pb-3">
@@ -343,7 +343,7 @@ export default function App() {
           </div>
 
           {/* CONTACT CARD (separate) */}
-          <div className="vintage-card p-6 hover:rotate-1 transition-all duration-300 relative">
+          <div className="vintage-card-blush p-6 hover:rotate-1 transition-all duration-300 relative">
             <div className="flex items-center gap-3 mb-4 border-b border-dashed border-[#8b7355]/20 pb-3">
               <Phone className="text-primary stroke-[1.2]" size={28} />
               <h3 className="font-handwritten text-2xl font-bold text-primary">Liên hệ</h3>

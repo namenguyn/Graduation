@@ -92,6 +92,87 @@
   pointer-events: none;
 }
 
+/* Vintage card color variants */
+.vintage-card-warm {
+  border-color: #d4a574;
+  background: linear-gradient(135deg, rgba(255, 248, 240, 0.9) 0%, rgba(255, 240, 225, 0.7) 100%);
+  box-shadow:
+    0 4px 12px rgba(212, 165, 116, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.vintage-card-warm::before {
+  background-image:
+    linear-gradient(45deg, rgba(212, 165, 116, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(212, 165, 116, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(212, 165, 116, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(212, 165, 116, 0.05) 75%);
+}
+
+.vintage-card-sage {
+  border-color: #6b8e7f;
+  background: linear-gradient(135deg, rgba(240, 250, 245, 0.9) 0%, rgba(230, 245, 240, 0.7) 100%);
+  box-shadow:
+    0 4px 12px rgba(107, 142, 127, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.vintage-card-sage::before {
+  background-image:
+    linear-gradient(45deg, rgba(107, 142, 127, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(107, 142, 127, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(107, 142, 127, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(107, 142, 127, 0.05) 75%);
+}
+
+.vintage-card-blush {
+  border-color: #c9847b;
+  background: linear-gradient(135deg, rgba(255, 245, 245, 0.9) 0%, rgba(255, 240, 240, 0.7) 100%);
+  box-shadow:
+    0 4px 12px rgba(201, 132, 123, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.vintage-card-blush::before {
+  background-image:
+    linear-gradient(45deg, rgba(201, 132, 123, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(201, 132, 123, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(201, 132, 123, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(201, 132, 123, 0.05) 75%);
+}
+
+.vintage-card-sky {
+  border-color: #7ba3c0;
+  background: linear-gradient(135deg, rgba(240, 248, 255, 0.9) 0%, rgba(230, 245, 255, 0.7) 100%);
+  box-shadow:
+    0 4px 12px rgba(123, 163, 192, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.vintage-card-sky::before {
+  background-image:
+    linear-gradient(45deg, rgba(123, 163, 192, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(123, 163, 192, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(123, 163, 192, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(123, 163, 192, 0.05) 75%);
+}
+
+.vintage-card-lavender {
+  border-color: #a896c7;
+  background: linear-gradient(135deg, rgba(248, 245, 255, 0.9) 0%, rgba(242, 240, 255, 0.7) 100%);
+  box-shadow:
+    0 4px 12px rgba(168, 150, 199, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.vintage-card-lavender::before {
+  background-image:
+    linear-gradient(45deg, rgba(168, 150, 199, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(168, 150, 199, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(168, 150, 199, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(168, 150, 199, 0.05) 75%);
+}
+
 /* Playful floating swaying animation */
 .floating-doodle {
   animation: sway 7s ease-in-out infinite;

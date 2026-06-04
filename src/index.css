@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* Fonts: headings use Fredoka (soft rounded), body uses Noto Sans. Google Fonts are linked in index.html with Vietnamese subset. */
+/* Fonts: headings use Playwrite Danmark Uloopet (vintage handwritten), body uses Noto Sans. Google Fonts are linked in index.html with Vietnamese subset. */
 :root{
-  --font-heading: 'Fredoka', 'Be Vietnam Pro', serif;
+  --font-heading: 'Playwrite Danmark Uloopet', 'Be Vietnam Pro', serif;
   --font-body: 'Noto Sans', 'Plus Jakarta Sans', 'Karla', sans-serif;
 }
 
@@ -14,16 +14,12 @@
 
 /* Custom font shortcuts */
 .font-handwritten {
-  font-family: 'Fredoka', var(--font-heading) !important;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  font-style: italic;
+  font-family: 'Playwrite Danmark Uloopet', var(--font-heading) !important;
+  letter-spacing: 0.5px;
 }
 
 .font-display {
-  font-family: 'Fredoka', 'Be Vietnam Pro', var(--font-body) !important;
-  font-weight: 700;
-  font-style: italic;
+  font-family: 'Playwrite Danmark Uloopet', 'Be Vietnam Pro', var(--font-body) !important;
 }
 
 /* Whimsical Sketchy Borders - Vintage Pencil Style */
